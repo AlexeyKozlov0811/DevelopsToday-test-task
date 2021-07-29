@@ -67,6 +67,5 @@ RUN chown -R app:app $APP_HOME
 USER app
 
 # run entrypoint.prod.sh
-RUN ["chmod", "a+x", "/home/app/web/entrypoint.prod.sh"]
-CMD gunicorn app.wsgi:application --bind 0.0.0.0:$PORT
+# CMD ["/home/app/web/entrypoint.prod.sh"]
 # ENTRYPOINT ["/home/app/web/entrypoint.prod.sh"]

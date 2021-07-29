@@ -11,4 +11,8 @@ then
     echo "PostgreSQL started"
 fi
 
+python manage.py makemigrations --no-input
+python manage.py migrate
+gunicorn app.wsgi:application --bind 0.0.0.0:$PORT
+
 exec "$@"
