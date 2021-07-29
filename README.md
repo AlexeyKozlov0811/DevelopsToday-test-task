@@ -6,7 +6,7 @@ https://developstoday-test-task-kozlov.herokuapp.com/
 
 - git clone https://github.com/AlexeyKozlov0811/DevelopsToday-test-task.git
 - cd DevelopsToday-test-task
-- docker-compose up --build
+- docker-compose up -d --build
 
 When app is started you will see a message like this:
 
