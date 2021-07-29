@@ -1,7 +1,18 @@
 from django.urls import path
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
-from .views import *
+from .views import (
+    PostListAPIView,
+    PostCreateAPIView,
+    PostUpdateAPIView,
+    PostDestroyAPIView,
+    CommentListAPIView,
+    CommentCreateAPIView,
+    CommentUpdateAPIView,
+    CommentDestroyAPIView,
+    UpVotePost,
+    SignUpView,
+)
 
 urlpatterns = [
     path("posts/", PostListAPIView.as_view(), name="read posts"),

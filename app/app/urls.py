@@ -1,14 +1,9 @@
-from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-# from news_api.views import image_upload
-
 urlpatterns = [
-    # path("", image_upload, name="news_api"),
     path("api/", include("news_api.urls")),
-    # path("admin/", admin.site.urls),
 ]
 
 if bool(settings.DEBUG):
