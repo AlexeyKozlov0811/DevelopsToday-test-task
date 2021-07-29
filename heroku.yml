@@ -11,4 +11,4 @@ build:
 release:
   image: web
   command:
-    - ./home/app/web/entrypoint.prod.sh
+    - /home/app/web/entrypoint.prod.sh
