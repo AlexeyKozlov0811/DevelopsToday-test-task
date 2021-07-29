@@ -8,7 +8,8 @@ build:
   docker:
     web: app/Dockerfile.prod
     nginx: nginx/Dockerfile
-release:
-  image: web
-  command:
-    - /home/app/web/entrypoint.prod.sh
+run:
+  web:
+    command:
+      - /home/app/web/entrypoint.prod.sh
+    image: web
